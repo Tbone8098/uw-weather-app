@@ -88,7 +88,8 @@ $(document).ready(function () {
     async function getWeatherInfo(location) {
         openWeatherKey = "2ad06e62443437293b602122d47eafe8";
 
-        var weatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${openWeatherKey}`;
+        var weatherURL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${openWeatherKey}`;
+        console.log(weatherURL);
 
         const weatherInfo = await $.ajax({
             url: weatherURL,
@@ -98,14 +99,14 @@ $(document).ready(function () {
         var lat = weatherInfo.coord.lat;
         var lon = weatherInfo.coord.lon;
 
-        var uvQueryURL = `http://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${openWeatherKey}`;
+        var uvQueryURL = `https://api.openweathermap.org/data/2.5/uvi?lat=${lat}&lon=${lon}&appid=${openWeatherKey}`;
 
         const uvInfo = await $.ajax({
             url: uvQueryURL,
             method: "GET",
         });
 
-        var forecastQueryURL = `http://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=5&appid=${openWeatherKey}`;
+        var forecastQueryURL = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&cnt=5&appid=${openWeatherKey}`;
 
         const forecastInfo = await $.ajax({
             url: forecastQueryURL,
