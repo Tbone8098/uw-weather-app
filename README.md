@@ -1,6 +1,6 @@
 # UW Simple Weather Application
 
-![overview](\img\overview.png)
+![overview](https://github.com/Tbone8098/uw-weather-app/blob/main/img/overview.png?raw=true)
 
 #### This app will use the openweathermap.org API to find the weather in any city in the world.
 
