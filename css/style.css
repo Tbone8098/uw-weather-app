@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid rgb(161, 161, 161);
+    border-radius: 5px;
+}
+
+.sidebar {
+    min-height: 95vh;
+}
+
+#history {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#history button {
+    background: white;
+    width: 90%;
+}
+
+.searchCity {
+    text-align: center;
+}
+
+#searchForm {
+    display: flex;
+    justify-content: center;
+}
+
+#submitBtn {
+    background: rgb(110, 110, 247);
+}
+
+#miniCardLoc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.miniCard{
+    margin: 0.5em;
+    padding: 0.5em;
+    background: rgb(110, 110, 247);
+    border-radius: 5px;
+    color: white;
+}
+
+.fa {
+    color: white;
+    font-size: large;
+}
+
+.uvIndex {
+    padding: 3px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px black;
+    color: white;
+}
+
+/* background color */
+.gray {
+    background: rgb(231, 231, 231);
+}
+
+.green {
+    background: green;
+}
+.orange {
+    background: orange;
+}
+.red {
+    background: red;
+}
